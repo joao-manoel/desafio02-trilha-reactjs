@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { GenreResponseProps } from "../@types/custom";
 import { api } from "../services/api";
 import { MovieCard } from "./MovieCard";
 
@@ -10,12 +11,6 @@ interface MovieProps {
     Value: string;
   }>;
   Runtime: string;
-}
-
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
 }
 
 interface ContentProps {
